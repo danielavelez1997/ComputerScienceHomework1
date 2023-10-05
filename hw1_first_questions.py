@@ -43,15 +43,3 @@ tuple_list = [('Ana', 25), ('Jose', 30)]
 
 result = dictionary_maker(tuple_list)
 print(result)
-
-############################################
-#
-# Now, imagine you are given data from a website that
-# has people's CVs. The data comes
-# as a list of dictionaries and each
-# dictionary looks like this:
-#
-# { 'user': 'george', 'jobs': ['bar', 'baz', 'qux']}
-# e.g. [{'user': 'john', 'jobs': ['analyst', 'engineer']},
-#       {'user': 'jane', 'jobs': ['finance', 'software']}]
-# we will refer to this as a "CV".

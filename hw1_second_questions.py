@@ -24,15 +24,17 @@
 # has worked as job_title.
 
 def has_experience_as(cvs,job_title):
+    dictionary = {}
     for cv in cvs:
         if job_title in cv['jobs']:
-            return cv['user']
+            dictionary[cv['user']] = job_title
+    return dictionary
         
 cv_list=[{'user': 'john', 'jobs': ['analyst', 'engineer']},
   {'user': 'jane', 'jobs': ['finance', 'software']},
   {'user': 'dani', 'jobs': ['finance']}]
 
-has_experience_as(cv_list,'analyst')
+has_experience_as(cv_list,'finance')
 
 #
 # 5)
